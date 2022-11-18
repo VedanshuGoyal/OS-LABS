@@ -1,0 +1,114 @@
+// input => ./demand_paging 3 12 4 2
+
+ [M] = [10]
+ [ref] = [{2, 5, 9, 8, 4, 7, 0, 7, 2, 1, 0, 0, 3, 8, 1, 8, 1, 8, 9, 0, 6, 6, 0, 7, 4, 4, 1, 9, 2, 3, 7, 1, 4, 3, 3, 4, 6, 3, 8, 0, 9, 6, 6, 9, 0, 1, 3, 2, 5, 9, 4, 3, 7, 7, 8, 3, 8, 3, 4, 2, 0, 1, 3, 1, 9, 4}]
+
+Process 3: for page reference 2, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 5, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 9, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 8, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 4, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 7, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 0, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 7, TLB hit with frame no. 1
+Process 3: for page reference 2, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 1, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 0, TLB miss -> page table valid with frame no. 2
+Process 3: for page reference 0, TLB hit with frame no. 2
+Process 3: for page reference 3, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 8, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 1, TLB miss -> page table valid with frame no. 0
+Process 3: for page reference 8, TLB hit with frame no. 3
+Process 3: for page reference 1, TLB hit with frame no. 0
+Process 3: for page reference 8, TLB hit with frame no. 3
+Process 3: for page reference 9, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 0, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 6, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 6, TLB hit with frame no. 3
+Process 3: for page reference 0, TLB hit with frame no. 1
+Process 3: for page reference 7, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 4, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 4, TLB hit with frame no. 2
+Process 3: for page reference 1, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 9, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 2, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 3, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 7, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 1, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 4, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 3, TLB miss -> page table valid with frame no. 2
+Process 3: for page reference 3, TLB hit with frame no. 2
+Process 3: for page reference 4, TLB hit with frame no. 0
+Process 3: for page reference 6, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 3, TLB miss -> page table valid with frame no. 2
+Process 3: for page reference 8, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 0, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 9, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 6, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 6, TLB hit with frame no. 2
+Process 3: for page reference 9, TLB hit with frame no. 1
+Process 3: for page reference 0, TLB miss -> page table valid with frame no. 0
+Process 3: for page reference 1, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 3, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 2, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 5, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 9, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 4, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 3, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 7, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 7, TLB hit with frame no. 0
+Process 3: for page reference 8, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 3, TLB miss -> page table valid with frame no. 2
+Process 3: for page reference 8, TLB hit with frame no. 3
+Process 3: for page reference 3, TLB hit with frame no. 2
+Process 3: for page reference 4, TLB miss -> page table valid with frame no. 1
+Process 3: for page reference 2, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 0, TLB miss -> page fault -> get frame no. 3
+Process 3: for page reference 1, TLB miss -> page fault -> get frame no. 2
+Process 3: for page reference 3, TLB miss -> page fault -> get frame no. 1
+Process 3: for page reference 1, TLB hit with frame no. 2
+Process 3: for page reference 9, TLB miss -> page fault -> get frame no. 0
+Process 3: for page reference 4, TLB miss -> page fault -> get frame no. 3
+
+The end of process Execution.
+Total number of PAGE FAULTS => 43
+
+
+ [M] = [3]
+ [ref] = [{0, 2, 1, 2, 2, 2, 1, 0, 2}]
+
+Process 1: for page reference 0, TLB miss -> page fault -> get frame no. 0
+Process 1: for page reference 2, TLB miss -> page fault -> get frame no. 1
+Process 1: for page reference 1, TLB miss -> page fault -> get frame no. 2
+Process 1: for page reference 2, TLB hit with frame no. 1
+Process 1: for page reference 2, TLB hit with frame no. 1
+Process 1: for page reference 2, TLB hit with frame no. 1
+Process 1: for page reference 1, TLB hit with frame no. 2
+Process 1: for page reference 0, TLB miss -> page table valid with frame no. 0
+Process 1: for page reference 2, TLB miss -> page table valid with frame no. 1
+
+The end of process Execution.
+Total number of PAGE FAULTS => 3
+
+
+ [M] = [4]
+ [ref] = [{3, 2, 2, 3, 1, 0, 3, 0, 1, 3, 3, 0, 3}]
+
+Process 2: for page reference 3, TLB miss -> page fault -> get frame no. 0
+Process 2: for page reference 2, TLB miss -> page fault -> get frame no. 1
+Process 2: for page reference 2, TLB hit with frame no. 1
+Process 2: for page reference 3, TLB hit with frame no. 0
+Process 2: for page reference 1, TLB miss -> page fault -> get frame no. 2
+Process 2: for page reference 0, TLB miss -> page fault -> get frame no. 3
+Process 2: for page reference 3, TLB miss -> page table valid with frame no. 0
+Process 2: for page reference 0, TLB hit with frame no. 3
+Process 2: for page reference 1, TLB miss -> page table valid with frame no. 2
+Process 2: for page reference 3, TLB miss -> page table valid with frame no. 0
+Process 2: for page reference 3, TLB hit with frame no. 0
+Process 2: for page reference 0, TLB miss -> page table valid with frame no. 3
+Process 2: for page reference 3, TLB hit with frame no. 0
+
+The end of process Execution.
+Total number of PAGE FAULTS => 4
+
+
