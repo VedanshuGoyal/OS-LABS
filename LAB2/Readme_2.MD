@@ -40,7 +40,5 @@ And in the server terminal you will see the game winners.
 And client terminal will also close(because of QUIT signal).
 
 
-
-
 // possible bugs
 if admin or clients give input when program are not asking from them (We are not sure but this can possibly can give not logical ans).

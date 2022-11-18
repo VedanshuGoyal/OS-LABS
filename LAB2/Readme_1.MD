@@ -17,11 +17,4 @@ Now to run over mergesort program =>
 
 This will form "Output.txt" in which all the given numbers are in sorted format.
 
-
-
-To see the result use the commands
-cat Input.txt
-cat Ouput.txt
-
-
 ASSUMPTION -> In Input.txt first number is how many numbers are there.
